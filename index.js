@@ -34,11 +34,18 @@ async function connectDB() {
 // Call connectDB and keep the connection open
 connectDB();
 
+//Middleware Function to authenticate
 
+// Login API
+
+// Signup API
 
 app.get("/", (req, res) => {
     res.send("Hello Sriiiii");
 });
+
+//Include Authentication Middleware to all the below apis
+// app.post("/api/bookings", authenticate(), next , async (req, res) => {}
 
 
 // Create Booking
